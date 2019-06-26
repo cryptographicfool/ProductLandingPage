@@ -1,22 +1,203 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>FLOAT - Bringing Music to your home!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <<script src="main.js"></script>
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<header id="header">
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-left" href="#"><img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_scale,h_40/v1561585041/fcc_landingpage/logo_fsuywx.png" alt="FLOAT" style="height: 30%;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#dem" class="nav-link">DEMO</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+ <!-- Indicators -->
+ <ol class="carousel-indicators">
+   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+   <li data-target="#myCarousel" data-slide-to="1"></li>
+   <li data-target="#myCarousel" data-slide-to="2"></li>
+ </ol>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+ <!-- Wrapper for slides -->
+ <div class="carousel-inner" role="listbox">
+   <div class="item active">
+     <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,h_800,w_1600/v1561574296/fcc_landingpage/r1_t8npvg.png" alt="Setup 1">
+     <div class="carousel-caption">
+       <h3>HiFi Setup</h3>
+       <p>Hi-Fidelity stereo setup for large room.</p>
+     </div>
+   </div>
+
+   <div class="item">
+     <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,h_800,w_1600/v1561574298/fcc_landingpage/r2_fvigdg.png" alt="Setup 2">
+     <div class="carousel-caption">
+       <h3>Listening Room</h3>
+       <p>Multi speaker listening room setup.</p>
+     </div>
+   </div>
+
+   <div class="item">
+     <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,h_800,w_1600/v1561574299/fcc_landingpage/r3_evhhvn.png" alt="Setup 3">
+     <div class="carousel-caption">
+       <h3>Analog Setup</h3>
+       <p>Custom setup with vintage analog components.</p>
+     </div>
+   </div>
+ </div>
+
+ <!-- Left and right controls -->
+ <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+ </a>
+ <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+   <span class="sr-only">Next</span>
+ </a>
+</div>
+
+
+
+  <div class="container text-center" id="about">
+    <h3>FLOAT</h3>
+    <p><em>Bringing music to your home!</em></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolor ea eveniet labore illo neque dolore, eum blanditiis reiciendis modi accusamus vel minima voluptate enim necessitatibus vero sint eius magni fugit architecto consequuntur, laudantium inventore tempore, saepe. Voluptatibus saepe labore praesentium, delectus quod magni debitis sapiente, minus error incidunt mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati fugiat assumenda architecto quasi omnis repudiandae voluptatem porro, expedita commodi cum iure aperiam recusandae ipsa, vitae, quos qui veniam similique. Nihil incidunt tempore maiores dolores officiis reiciendis facere asperiores. Aliquid, rem fugiat? Ratione id ut est sit iure corporis, accusantium aspernatur, labore. Quam tempora dolorum quidem temporibus, officia quas recusandae, magni voluptatem consectetur aperiam, maxime nam nesciunt dolorem. Ea a facere obcaecati dolorem eum, cupiditate omnis tenetur voluptatum aut repudiandae ducimus saepe, explicabo consectetur maiores magni dolorum, illum provident aliquid qui laborum. Voluptates nam incidunt dolorum dolore, in exercitationem facilis, quo voluptas alias quod quisquam neque atque minima distinctio perspiciatis necessitatibus vitae accusantium laboriosam iusto magnam praesentium ducimus animi deleniti? Magni doloribus molestiae quibusdam suscipit distinctio dolor beatae.</p>
+    <br>
+    <hr>
+    <div class="row" style="padding-top: 50px;">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Turntables</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+          <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,e_grayscale,h_255,w_255,x_442/v1561569560/fcc_landingpage/vinyl-record-on-a-record-player_kh3a4h.png" class="img-circle product" alt="Turntables">
+        </a>
+        <div id="demo" class="collapse">
+          <p>Quality Turntable</p>
+          <p>Direct and belt driven</p>
+          <p>Professional custom setup</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Speakers</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+          <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,e_grayscale,h_255,w_255/v1561569559/fcc_landingpage/speakerwall_tnutty.png" class="img-circle product" alt="Speakers">
+        </a>
+        <div id="demo2" class="collapse">
+          <p>High Fidelety</p>
+          <p>Towers and Bookshelves</p>
+          <p>Professional custom setup</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Amplifiers</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="https://res.cloudinary.com/cryptographicfool/image/upload/c_lfill,e_grayscale,g_center,h_255,w_255/v1561569562/fcc_landingpage/antique-stereo-tuner_chdoxn.png" class="img-circle product" alt="Amplifiers">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Stereo and Surround</p>
+          <p>Tube and Standalone</p>
+          <p>Professional custom setup</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="dem" class="bg-1" style="padding: 0;">
+    <div class="container" style="padding-top: 30px;">
+      <h3 class="text-center">Listening Setup Demo</h3>
+      <p class="text-center">Check out the demo of a music listening room setup below.</p>
+      <div class="video-container">
+        <iframe id="video" width="853" height="480" class="center" style="border: black;"
+  src="https://www.youtube.com/embed/3VRXaaZH81I?controls=0">
+  </iframe>
+      </div>
+    </div>
+  </div>
+
+<div class="container" style="padding-top: 0; padding-bottom: 0;">
+  <div class="container-flex" id="contact">
+    <div class="box-1">
+      <div class="text-right" id="form-box">
+        <h3>Contact us:</h3>
+        <p>Fill the details below and we will get in touch with you.</p>
+        <form id="form">
+        <div class="form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment"></textarea>
+      <div class="row">
+        <div class="form-group">
+          <button class="btn pull-right" type="submit" href="https://www.freecodecamp.com/email-submit" id="submit">Send</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+    <div class="box-2">
+      <div class="text-left">
+        <h3>Float Inc.</h3>
+        <br>
+        <p>Come visit us :</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> 32, Rad Ave, New York, NY.</p>
+        <p><span class="glyphicon glyphicon-phone"></span> Phone: +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+        <br>
+        <p>We take pride in best in class customer service.</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+
+  <footer class="text-center">
+  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Made by cryptographicfool for FCC assignment.</p>
+  <br>
+  <br>
+
+</footer>
+
+
+
+</body>
 </html>
