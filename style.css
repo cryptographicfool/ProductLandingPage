@@ -1,5 +1,5 @@
 .container {
- padding: 80px;
+ padding: 40px;
 }
 
 .product {
@@ -99,6 +99,35 @@ height: 100%;
 }
 
 }
+
+@media(max-width:480px) {
+
+  .btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+  margin: 20px;
+  width: 50%;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+
+#email {
+  text-align: right;
+}
+
+#comments {
+  text-align: right;
+}
+
+}
+
 
 .logo {
   padding: 10px;
